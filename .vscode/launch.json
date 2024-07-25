@@ -1,6 +1,20 @@
 {
   "version": "0.0.1",
   "configurations": [
-
+    {
+      // 配置项的名称
+      "name": "hys",
+      // 调试的请求类型
+      "request": "launch",
+      // 跳过的文件或目录
+      "skipFiles": [
+        // 忽略所有 node_internals 目录下的文件
+        "<node_internals>/**"
+      ],
+      // 调试的类型
+      "type": "node",
+      // 指定要调试的程序的路径
+      "program": "${workspaceFolder}\/hys.js"
+    }
   ]
 }
